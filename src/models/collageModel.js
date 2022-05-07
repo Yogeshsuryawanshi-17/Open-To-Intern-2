@@ -24,5 +24,5 @@ const collageSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 
-module.exports = mongoose.model('collage', collageSchema)
+module.exports = mongoose.model('collegeData', collageSchema)
 
