@@ -28,6 +28,7 @@ const createIntern = async (req, res) => {
 
         // Validate mobile
 
+
         if (!body.mobile) {
             return res.status(400).send({ status: false, msg: "Mobile number is required" });
         }
@@ -85,7 +86,7 @@ const createIntern = async (req, res) => {
             return res.status(400).send({ status: false, msg: "New entries can't be deleted" });
         }
 
-        
+
         let collegeData = await collageModel.findOne({ name: collegeName })
         if (!collegeData) {
             return res.status(404).send({ status: false, msg: "collegeName invalid" })
