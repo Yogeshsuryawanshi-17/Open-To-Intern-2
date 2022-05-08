@@ -1,20 +1,12 @@
 {
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/index.js"
-  },
-  "dependencies": {
-    "body-parser": "^1.20.0",
-    "email-validator": "^2.0.4",
-    "express": "^4.18.1",
-    "mongoose": "^6.3.2",
-    "nodemon": "^2.0.16",
-    "validator": "^13.7.0"
-  },
   "name": "open-to-intern-2",
   "description": "## Open to Intern Project Requirement",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Yogeshsuryawanshi-17/Open-To-Intern-2.git"
@@ -22,8 +14,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Yogeshsuryawanshi-17/Open-To-Intern-2/issues"
-  },
-  "homepage": "https://github.com/Yogeshsuryawanshi-17/Open-To-Intern-2#readme"
+   "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.1",
+    "module": "^1.0.0",
+    "mongoose": "^6.3.2",
+    "nodemon": "^2.0.16",
+    "validator": "^13.7.0"
+  }
 }

@@ -10,29 +10,21 @@ const internSchema = new mongoose.Schema({
     email: {
         type: String,
         unique: true,
-        trim: true,
-        required: 'Please Enter a Name'
+        trim: true
     },
-
     mobile: {
         type: String,
         unique: true,
-        trim: true,
-        required: 'Please enter a number',
-        minlength: 10,
-        maxlength: 10,
-
+        required: true
     },
     collegeId: {
         type: ObjectId,
-        required: true,
-        trim: true,
-        ref: "collage"
+        refs: 'College'
     },
     isDeleted: {
         type: Boolean,
         default: false
-    },
+    }
 }, { timestamps: true });
 
 
